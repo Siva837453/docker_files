@@ -1,3 +1,4 @@
 FROM almalinux:9
-CMD [ "ping","-c5","google.com" ]
-#ENTRYPOINT [ "ping","-c5","google.com" ]
+#CMD [ "ping","-c5","google.com" ]    CMD instruction will be overriden if you run with yahoo.com
+ENTRYPOINT [ "ping","-c5","google.com" ] 
+#same instructions if you are overriden with entry point it was not working
