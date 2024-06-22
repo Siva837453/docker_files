@@ -1,0 +1,8 @@
+ARG version
+FROM almalinux:${version:-8}
+#RUN /cat/etc/*release
+ARG course=devops
+ARG student=sivakumar
+ARG duration=100hrs
+ENV duration=${duration}
+CMD [ "sleep","100" ]
