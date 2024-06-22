@@ -5,4 +5,5 @@ ARG course=devops
 ARG student=sivakumar
 ARG duration=100hrs
 ENV duration=${duration}
+RUN echo "course is" ${course}, "student is"${student}, "duration is" {duration}
 CMD [ "sleep","100" ]
